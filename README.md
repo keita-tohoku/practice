@@ -8,13 +8,9 @@
         大きいarray入力したときにrun time errorが出るようで。  
 
 
-11/08 : MaxCounter
-
-
-        Correctnessはパスしましたが、Performanceが60%でしたね。
-        
-        
-        明日なんとかしよう。
+11/08 : MaxCounter  
+        Correctnessはパスしましたが、Performanceが60%でしたね。  
+        明日なんとかしよう。  
         
         
         
