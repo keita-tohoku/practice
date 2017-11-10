@@ -13,4 +13,6 @@
         明日なんとかしよう。  
         
         
-        
+11/10 : GenomicRangeQuery          
+        Correctness60点のPerformance0点...  
+        4時間かけてコレとかプログラマ辞めるしかない  
