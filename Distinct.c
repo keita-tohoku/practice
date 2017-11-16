@@ -1,3 +1,6 @@
+// https://qiita.com/hiso/items/5c36f50c7de61fe870a2
+// こちらのサイトよりマージソートを引用しました
+
 void mergeSort(int *N,int left,int right); 
 void merge(int *N, int left, int mid, int right);
     
