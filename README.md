@@ -16,3 +16,6 @@
 11/10 : GenomicRangeQuery          
         Correctness60点のPerformance0点...      
         4時間かけてコレとかプログラマ辞めるしかない  
+
+
+12/05 : ちょっと間空いてしまいましたが、今回からjavaでやってます  
