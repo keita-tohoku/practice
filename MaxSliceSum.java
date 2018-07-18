@@ -1,35 +1,26 @@
 class Solution {
     public int solution(int[] A) {
         // write your code in Java SE 8
-        int max = 0;
-        int sum = 0;
-        int l = A.length;
+      int max = Integer.MIN_VALUE;
+      int l = A.length;
+      int[] B = new int[l];
         
-        if (l == 1 ) return A[0];
+      if (l == 1 ) return A[0];
         
-        sum = A[0];
-        max = A[0];
+      B[0] = A[0];
         
-        for (int i = 1; i < l; i++) {
-            if (A[i] >= 0 ) {
-                if (sum < 0) {
-                    sum = A[i];
-                } else {
-                    sum = sum + A[i];
-                }
-            } else {
-                if (sum < A[i]) {
-                    sum = A[i];
-                } else {
-                    if (max < sum) max = sum;
-                    sum = Integer.MIN_VALUE;
-                }
-            }
-        }
-        if (max < sum) {
-            max = sum;
-        }
+      for (int i = 1; i < l; i++) {
+          if (B[i-1] + A[i] > A[i]) {
+              B[i] = B[i-1] + A[i];
+          } else {
+              B[i] = A[i];
+          }
+      }
         
-        return max;
+      for (int i = 0; i < l; i++) {
+          if (max < B[i]) max = B[i];
+      }
+        
+    return max;  
     }
 }
